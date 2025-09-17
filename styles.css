@@ -12,12 +12,17 @@ body {
   font-family: Jura, sans-serif;
 }
 
+
+/* Header */
+
 .navbar {
   height: 120px;
+  position: sticky;
   background-color: rgba(0, 0, 0, 0);
   display: flex;
   justify-content: space-between;
   align-items: center;
+  top: 0;
 }
 
 nav h1 {
@@ -35,9 +40,16 @@ nav h1 {
 }
 
 a {
-  color: rgb(255, 255, 255);
+  color: rgb(212, 212, 212);
   text-decoration: none;
+  transition-duration: 0.2s all ease;
 }
+
+a:hover {
+  color: rgb(255, 255, 255);
+  text-shadow: 2px 3px 9px rgb(255, 255, 255);
+}
+
 
 #bg-video {
   position: fixed;
@@ -50,20 +62,25 @@ a {
 }
 
 .header-content {
-  height: 600px;
+  height: 700px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 100px;
+  gap: 80px;
 }
 
-.header-content p {
+.header-content-text {
   font-size: 48px;
 }
 
+.header-content-text-description i {
+  color: rgb(255, 153, 0);
+}
+
 .header-content p b {
-  color: rgb(12, 56, 185);
+  color: rgb(0, 64, 255);
+  text-shadow: 2px 3px 60px rgb(0, 64, 255);
 }
 
 .buttons {
@@ -114,4 +131,29 @@ a {
   background-color: rgb(146, 128, 128);
   box-shadow: 2px 3px 50px rgb(46, 46, 58);
   transition-duration: 0.2s;
+}
+
+
+
+/* Main content */
+
+
+.about-me {
+  z-index: 1;
+  height: 1000px;
+  margin-top: 200px;
+  background-color: black;
+}
+
+.about-text {
+  padding-top: 50px;
+  margin-left: 70px;
+  font-size: 38px;
+}
+
+.block-project {
+  background-color: aliceblue;
+
+  display: flex;
+
 }
