@@ -17,7 +17,7 @@ body {
 
 .navbar {
   height: 120px;
-  position: sticky;
+  /* position: sticky; */
   background-color: rgba(0, 0, 0, 0);
   display: flex;
   justify-content: space-between;
@@ -142,7 +142,8 @@ a:hover {
   z-index: 1;
   height: 1000px;
   margin-top: 200px;
-  background-color: black;
+  background: #000000;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 1) 92%, rgba(72, 17, 120, 1) 100%);
 }
 
 .about-text {
@@ -151,9 +152,6 @@ a:hover {
   font-size: 38px;
 }
 
-.block-project {
-  background-color: aliceblue;
-
+/* .block-project {
   display: flex;
-
-}
+} */
